@@ -1,0 +1,15 @@
+.header
+  .inner-header
+    = link_to(image_tag('logo.jpg', class: 'logo'), root_path)
+    .nav
+      %ul
+        %li
+          =link_to('Home', root_path)
+        %li
+          =link_to('About', about_path)
+        %li
+          =link_to('Members', members_path)
+        %li
+          =link_to('Alumni', alumni_path)
+        %li
+          =link_to('Contact', contact_path)

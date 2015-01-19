@@ -1,0 +1,33 @@
+.left{class: 'contact-form'}
+  =form_for Message.new, :url => send_email_path do |form|
+    %p
+      = form.label :name
+      = form.text_field :name
+
+    %p
+      = form.label :email
+      = form.text_field :email
+
+    %p
+      = form.label :subject
+      = form.text_field :subject
+
+    %p
+      = form.label :role, 'Your Role'
+      = form.select(:role, ['Student', 'Professor', 'Alumni', 'Sponsor', 'Press'])
+
+    %p
+      = form.label :body, 'Message'
+      = form.text_area :body, rows: 10
+
+    %p
+      = form.submit
+
+.right
+  =image_tag('map.png', usemap: '#cakemap', alt: 'Map of Babson')
+  %map{ name: 'cakemap' }
+    %area{ shape: 'rect', coords: '130, 150, 300, 280', href: 'https://www.google.com/maps/dir//Babson,+231+Forest+St,+Babson+Park,+MA+02457/@42.2962265,-71.2654264,14z/data=!4m12!1m3!3m2!1s0x89e381418b1914ef:0x4ef71f3899e76a89!2sBabson!4m7!1m0!1m5!1m1!1s0x89e381418b1914ef:0x4ef71f3899e76a89!2m2!1d-71.26951!2d42.296578', alt: 'interests'}
+    %area{ shape: 'rect', coords: '375, 100, 425, 150', href: 'http://images.huffingtonpost.com/2008-05-27-100MillionCash.jpg'}
+  %br
+  %br
+    Click Babson for directions or find Roger Babson's treasure

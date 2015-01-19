@@ -1,0 +1,27 @@
+<h2>Babson College's Entrepreneurship Living Community</h2>
+
+<script>
+    var timer = 2000;
+    var current_photo = 0;
+
+    function start_animation() {
+        setInterval("slideshow()", timer);
+    }
+
+    function slideshow() {
+        if (timer > 0) {
+            var slideshow = document.getElementById("cover");
+            var photos = new Array("pic1.jpg", "pic5.jpg", "family.jpg");
+            slideshow.src = photos[current_photo];
+            if (current_photo == 2) {
+                current_photo = 0;
+            } else {
+                current_photo += 1;
+            }
+        }
+    }
+</script>
+
+<div onload="start_animation();" class='cover-item'>
+  <%= image_tag('family.jpg', id: '1', class: 'cover', alt: 'E-Tower 2014 Group Photo') %>
+</div>

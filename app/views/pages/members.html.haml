@@ -1,0 +1,8 @@
+%h2 E-Tower Roster 2014
+.table
+  -@members.each do |member|
+    .col-3
+      .member-container
+        = image_tag('http://graph.facebook.com/' + member[2] + '/picture?width=205&height=205', style: '')
+        .member-name
+          = member[0]
