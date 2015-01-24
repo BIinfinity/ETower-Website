@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>E-Tower</title>
+		<link href="/assets/application-02965f824b2961e5e60fba1c20580bf6.css" media="screen" rel="stylesheet" />
+		<script src="/assets/application-792478532c41dc3e7a658f7b744c001c.js"></script>
+		<script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+		<link href="/assets/favicon-7351b5cecd4ee9cc497a43c4a0421a3a.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+		<meta content="authenticity_token" name="csrf-param" />
+		<meta content="jIwqELyYdipCVGCZBgD6OkUXpkMeYWHcEGA+RPAsXQY=" name="csrf-token" />
+	</head>
+
+	<div class='header'>
+		<div class='inner-header'>
+			<a href="/"><img alt="Logo" class="logo" src="/assets/logo-d1691f361e2845dfeecc0656e5c63851.jpg" /></a>
+			
+			<div class='nav'>
+				<ul>
+					<li>
+						<a href="/">Home</a>
+					</li>
+					<li>
+						<a href="/about">About</a>
+					</li>
+					<li>
+						<a href="/members">Members</a>
+					</li>
+					<li>
+						<a href="/alumni">Alumni</a>
+					</li>
+					<li>
+						<a href="/contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<body>
+		<div class='container'>
+			<div class='contact-form left'>
+				<form accept-charset="UTF-8" action="/contact" class="new_message" id="new_message" method="post">
+				
+				<div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="jIwqELyYdipCVGCZBgD6OkUXpkMeYWHcEGA+RPAsXQY=" />
+				</div>
+				
+				<p>
+					<label for="message_name">Name</label>
+					<input id="message_name" name="message[name]" type="text" />
+				</p>
+				
+				<p>
+					<label for="message_email">Email</label>
+					<input id="message_email" name="message[email]" type="text" />
+				</p>
+				
+				<p>
+					<label for="message_subject">Subject</label>
+					<input id="message_subject" name="message[subject]" type="text" />
+				</p>
+				
+				<p>
+					<label for="message_role">Your Role</label>
+					<select id="message_role" name="message[role]"><option value="Student">Student</option>
+					<option value="Professor">Professor</option>
+					<option value="Alumni">Alumni</option>
+					<option value="Sponsor">Sponsor</option>
+					<option value="Press">Press</option></select>
+				</p>
+				
+				<p>
+					<label for="message_body">Message</label>
+					<textarea id="message_body" name="message[body]" rows="10">
+					</textarea>
+				</p>
+				
+				<p>
+					<input name="commit" type="submit" value="Create Message" />
+				</p>
+				</form>
+
+			</div>
+			
+			<div class='right'>
+				<img alt="Map of Babson" src="/assets/map-c6ff9bb7e4c52807e01e90b7c9828ffb.png" usemap="#cakemap" />
+				<map name='cakemap'>
+				<area alt='interests' coords='130, 150, 300, 280' href='https://www.google.com/maps/dir//Babson,+231+Forest+St,+Babson+Park,+MA+02457/@42.2962265,-71.2654264,14z/data=!4m12!1m3!3m2!1s0x89e381418b1914ef:0x4ef71f3899e76a89!2sBabson!4m7!1m0!1m5!1m1!1s0x89e381418b1914ef:0x4ef71f3899e76a89!2m2!1d-71.26951!2d42.296578' shape='rect'>
+				<area coords='375, 100, 425, 150' href='http://images.huffingtonpost.com/2008-05-27-100MillionCash.jpg' shape='rect'>
+				</map>
+				<br>
+				<br>
+				Click Babson for directions or find Roger Babson's treasure
+				</br>
+			</div><!-- end right -->
+
+		</div><!-- end container -->
+	</body>
+</html>

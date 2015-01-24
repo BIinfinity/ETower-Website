@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>E-Tower</title>
+		<link href="/assets/application-02965f824b2961e5e60fba1c20580bf6.css" media="screen" rel="stylesheet" />
+		<script src="/assets/application-792478532c41dc3e7a658f7b744c001c.js"></script>
+		<script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+		<link href="/assets/favicon-7351b5cecd4ee9cc497a43c4a0421a3a.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+		<meta content="authenticity_token" name="csrf-param" />
+		<meta content="jIwqELyYdipCVGCZBgD6OkUXpkMeYWHcEGA+RPAsXQY=" name="csrf-token" />
+	</head>
+	
+	<div class='header'>
+		<div class='inner-header'>
+		<a href="/"><img alt="Logo" class="logo" src="/assets/logo-d1691f361e2845dfeecc0656e5c63851.jpg" /></a>
+			<div class='nav'>
+				<ul>
+					<li>
+						<a href="/">Home</a>
+					</li>
+					<li>
+						<a href="/about">About</a>
+					</li>
+					<li>
+						<a href="/members">Members</a>
+					</li>
+					<li>
+						<a href="/alumni">Alumni</a>
+					</li>
+					<li>
+						<a href="/contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<body>
+		<div class='container'>
+		<h2>Babson College's Entrepreneurship Living Community</h2>
+
+		<script>
+				var timer = 2000;
+				var current_photo = 0;
+
+				function start_animation() {
+						setInterval("slideshow()", timer);
+				}
+
+				function slideshow() {
+						if (timer > 0) {
+								var slideshow = document.getElementById("cover");
+								var photos = new Array("pic1.jpg", "pic5.jpg", "family.jpg");
+								slideshow.src = photos[current_photo];
+								if (current_photo == 2) {
+										current_photo = 0;
+								} else {
+										current_photo += 1;
+								}
+						}
+				}
+		</script>
+
+			<div onload="start_animation();" class='cover-item'>
+				<img alt="E-Tower 2014 Group Photo" class="cover" id="1" src="/assets/family-41594c83653309969506f7d3aa81313f.jpg" />
+			</div>
+		</div>
+	</body>
+</html>
