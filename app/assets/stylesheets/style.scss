@@ -132,6 +132,7 @@ h2 {
   float: left;
 }
 
+/* nav bar */
 .nav {
   float: right;
   height: 100%;
@@ -150,7 +151,7 @@ h2 {
   color: #5a5a5a;
   text-decoration: none;
 }
-
+/* nav bar */
 /* Body */
 
 .container {
@@ -205,6 +206,7 @@ h2 {
   float: right;
 }
 
+/* Press Page */
 .press-container {
   line-height: 19px !important;
   margin: 14px 0 !important;
@@ -235,7 +237,9 @@ h2 {
   margin-bottom: 19px !important;
   color: #888888;
 }
+/* End Press Page */
 
+/* Contact Page */
 .contact-form label {
   color: #555;
   display: block;
@@ -281,7 +285,9 @@ h2 {
   -webkit-background-clip: padding-box;
   cursor: pointer;
 }
+/* End Contact Page */
 
+/* Members Page */
 .member {
   padding-right: 20px;
 }
@@ -294,3 +300,4 @@ h2 {
 .member-container img {
   width: 100%;
 }
+/* End Members Page */
